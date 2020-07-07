@@ -1,6 +1,6 @@
-# student_coloco
+# Application student_coloco
 
-A new Flutter project.
+A new Flutter project using firebase.
 
 ## Getting Started
 
