@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 
 import './details_screen.dart';
 import './main_drawer.dart';
+import './login_page.dart';
+import 'authenticate/authenticate.dart';
+import 'home/home.dart';
+
 
 class MainDrawer extends StatelessWidget {
   // This widget is the root of your application.
@@ -110,34 +114,29 @@ class MainDrawer extends StatelessWidget {
               title: Text('Communiquer', style: TextStyle(color: Colors.lightBlue[800], fontSize: 15, fontWeight: FontWeight.bold)),
               dense:true,
             ),
+            
             ListTile(
-              leading: Icon(Icons.laptop),
-              title: Text('Web'),
+              leading: Icon(Icons.alternate_email),
+              title: Text('Authentification'),
               dense:true,
               onTap: () {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => DetailsScreen(),
+                      builder: (context) => LoginScreen(),
                 ));
-              },
-            ),
-            ListTile(
-              leading: Icon(Icons.alternate_email),
-              title: Text('FPBM Facebook'),
-              dense:true,
-              onTap: () {
-                // Update the state of the app
-                // ...
-                // Then close the drawer
-                Navigator.pop(context);
-              },
+               },
             ),
             ListTile(
               leading: Icon(Icons.account_circle),
-              title: Text('Authentification'),
+              title: Text('Inscription'),
               dense:true,
               onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => FormScreen(),
+                ));
                },
             ),
             
