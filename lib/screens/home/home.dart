@@ -3,7 +3,6 @@ import 'package:flutter/services.dart';
 import 'package:student_coloco/utilities/constants.dart';
 import 'package:student_coloco/screens/authenticate/authenticate.dart';
 import 'package:student_coloco/screens/main_drawer.dart';
-import 'package:student_coloco/screens/home_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   @override
@@ -306,8 +305,8 @@ class _LoginScreenState extends State<LoginScreen> {
                         height: 30.0,
                       ),
                       _buildPasswordTF(),
-                      _buildForgotPasswordBtn(),
-                      _buildRememberMeCheckbox(),
+                      //_buildForgotPasswordBtn(),
+                     // _buildRememberMeCheckbox(),
                       _buildLoginBtn(),
                       _buildSignInWithText(),
                       _buildSocialBtnRow(),

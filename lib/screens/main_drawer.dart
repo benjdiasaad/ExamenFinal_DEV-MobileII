@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 
 import './details_screen.dart';
 import './main_drawer.dart';
-import './login_page.dart';
 import 'authenticate/authenticate.dart';
 import 'home/home.dart';
+import 'home_screen.dart';
 
 
 class MainDrawer extends StatelessWidget {
@@ -50,19 +50,19 @@ class MainDrawer extends StatelessWidget {
             ),
             ListTile(
               leading: Icon(Icons.home),
-              title: Text('Accueil'),
+              title: Text('Lancer votre Demande'),
               dense:true,
               onTap: () {
                Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => DetailsScreen(),
+                      builder: (context) => HomeScreen(),
                 ));
               },
             ),
             ListTile(
               leading: Icon(Icons.new_releases),
-              title: Text('Actualités'),
+              title: Text('Met votre Offre'),
               dense:true,
               onTap: () {
                 
