@@ -48,6 +48,7 @@ flutter:
   assets:
    - assets/logos/facebook.jpg
    - assets/logos/google.jpg
+   - assets/img/app.png
 
 
   fonts:

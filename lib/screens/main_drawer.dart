@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import './details_screen.dart';
-import './main_drawer.dart';
+import 'about_univ.dart';
 import 'authenticate/authenticate.dart';
 import 'home/home.dart';
 import 'home_screen.dart';
@@ -107,7 +107,7 @@ class MainDrawer extends StatelessWidget {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => DetailsScreen(),
+                      builder: (context) => About(),
                 ));
               },
             ),
