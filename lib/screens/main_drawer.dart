@@ -5,6 +5,8 @@ import './main_drawer.dart';
 import 'authenticate/authenticate.dart';
 import 'home/home.dart';
 import 'home_screen.dart';
+import 'offre_screen.dart';
+import 'demande_screen.dart';
 
 
 class MainDrawer extends StatelessWidget {
@@ -75,31 +77,31 @@ class MainDrawer extends StatelessWidget {
             ),
             ListTile(
               leading: Icon(Icons.account_balance),
-              title: Text('FPBM en Bref'),
+              title: Text('Liste offres'),
               dense:true,
               onTap: () {
                Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => DetailsScreen(),
+                      builder: (context) => Offre(),
                 ));
               },
             ),
             ListTile(
               leading: Icon(Icons.assignment),
-              title: Text('Mot du président'),
+              title: Text('Liste demandes'),
               dense:true,
               onTap: () {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => DetailsScreen(),
+                      builder: (context) => Demande(),
                 ));
               },
             ),
             ListTile(
               leading: Icon(Icons.calendar_today),
-              title: Text('Evènements FPBM'),
+              title: Text("à propos de l'application"),
               dense:true,
               onTap: () {
                 Navigator.push(

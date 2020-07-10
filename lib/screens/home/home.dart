@@ -81,7 +81,7 @@ class _LoginScreenState extends State<LoginScreen> {
       ],
     );
   }
-
+/*
   Widget _buildForgotPasswordBtn() {
     return Container(
       alignment: Alignment.centerRight,
@@ -95,7 +95,8 @@ class _LoginScreenState extends State<LoginScreen> {
       ),
     );
   }
-
+  */
+/*
   Widget _buildRememberMeCheckbox() {
     return Container(
       height: 20.0,
@@ -122,7 +123,7 @@ class _LoginScreenState extends State<LoginScreen> {
       ),
     );
   }
-
+*/
   Widget _buildLoginBtn() {
     return Container(
       padding: EdgeInsets.symmetric(vertical: 25.0),
@@ -285,7 +286,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   physics: AlwaysScrollableScrollPhysics(),
                   padding: EdgeInsets.symmetric(
                     horizontal: 40.0,
-                    vertical: 120.0,
+                    vertical: 80.0,
                   ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
