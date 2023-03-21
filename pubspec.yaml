@@ -29,7 +29,7 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.3
   font_awesome_flutter: ^8.2.0
-  dio: ^1.0.13
+  dio: ^5.0.3
 
 dev_dependencies:
   flutter_test:
